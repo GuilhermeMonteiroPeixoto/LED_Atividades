@@ -141,3 +141,19 @@ Outra forma de analisar as tabelas, é identificando valores distintos.
 ANOMALIAS DETECTADAS EM 20/06/2021: dados com paciente_endereco_cep faltando e coluna id_sistema_origem nao possui nenhuma linha com valor.
 _______________________________
 
+### Discussão Segurança dos dados
+
+```A Lei Geral de Proteção de Dados Pessoais cita o dado anonimizado, que é aquele que, originariamente, era relativo a uma pessoa, mas que passou por etapas que garantiram a desvinculação dele a essa pessoa. Se um dado for anonimizado, então a LGPD não se aplicará a ele. Vale frisar que um dado só é considerado efetivamente anonimizado se não permitir que, via meios técnicos e outros, se reconstrua o caminho para "descobrir" quem era a pessoa titular do dado - se de alguma forma a identificação ocorrer, então ele não é, de fato, um dado anonimizado e sim, apenas, um dado pseudonimizado e estará, então, sujeito à LGPD.```
+
+A identificação direta do paciente nos dados disponibilizados, está criptografada. Podemos ver isso na tabela paciente, coluna `paciente_id` e `documento_id`. Entretanto, a proteção a alguns dados sensíveis como endereço não está sendo feita. Um exemplo disso é que podemos encontrar alguns indivíduos presentes no banco de dados:
+
+- Indivíduo: ?
+- Idade: 98
+- Sexo: Masculino
+- Raça/Cor: Branca
+- Município: Piaçabuçu
+- CEP: 57210
+- Nacionalidade: Extrangeiro
+
+Visto que a cidade de Piaçabuçu possui 17848 pessoas, fica fácil encontrar alguem com essas características. O que mostra um ponto 
+fraco na anonimização dos dados.
