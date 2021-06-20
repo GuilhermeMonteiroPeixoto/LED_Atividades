@@ -11,7 +11,7 @@ que quiser. Tentar identificar algum ponto fraco na anonimização dos dados,
 inconsistências com a LGPD, etc. Faça uma discussão dos dados nesse sentido;
 * Exportar a base de dados (dump);
 * Disponibilizar o código no GitHub ou GitLab ou Bitbucket;
-* Disponibilizar o dump da base através de link.
+* Disponibilizar o dump da base através de link. (https://github.com/GuilhermeMonteiroPeixoto/LED_Atividades/blob/main/Parte_2/Self-ContainedFile_Dump_Structure_and_Data.sql)
 ________________________________
 
 ### Modelagem banco de dados relacional (MySQL)
