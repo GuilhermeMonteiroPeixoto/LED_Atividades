@@ -1,6 +1,15 @@
 # PARTE 1
 
-Download da base de dados ‘us-500.csv’ do link https://www.briandunning.com/sample-data/
+Faça o download da base de dados ‘us-500.csv’ do link https://www.briandunning.com/sample-data/
+* Cheque se há algum dado faltante na base de dados ‘us-500’;
+* Classifique os endereços por ‘state’;
+* Suponha que o zip code deve sempre ter 5 dígitos, ache todos os zip codes
+irregulares;
+* Separe a coluna ‘address’ em três partes: o número na rua, o nome da rua e o
+número de quartos. (Considere que pode haver partes faltantes)
+Ex. 8 W Cerritos Ave #54 → ‘8’, ‘W Cerritos Ave’, ‘ #54’
+6649 N Blue Gum St → ‘6649’, ‘N Blue Gum St’, ‘ ‘.
+______________________________
 
 #### Instalando biblioteca missingno
 
