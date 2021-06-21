@@ -383,8 +383,3 @@ print("Evolução:\n +", diferenca_AstraZeneca , "AstraZeneca\n +", diferenca_Bu
     
 
 Percebe-se que a quantidade de vacinas aplicadas do tipo Covishield foi bem maior que os outros tipos. Isso faz sentido visto que o Estado de Alagoas recebeu novo lote desse imunizante, com 98.250 doses.
-
-
-```python
-
-```
